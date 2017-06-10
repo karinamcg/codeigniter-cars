@@ -6,8 +6,13 @@
     * Student ID: STU-00001261 * Date : 2017/06/12
 -->
 <?php
+    defined('BASEPATH') OR exit('No direct script access allowed');
 
     class carController extends CI_Controller {
+        
+        public function __construct(){
+            parent::__construct();
+        }
         
         public function index(){
             $this->load->model('allCarModel');
@@ -15,10 +20,10 @@
             $this->load->view('allCarView', $allCars);
         }
         
-        public function over200(){
-            $this->load->model('over200Model');
-            $over200Cars['data'] = $this->over200Model->getData();
-            $this->load->view('over200View', $over200Cars);
+        public function speed($speed){
+            $this->load->model('speedModel');
+            $speedCars['data'] = $this->speedModel->getData($speed);
+            $this->load->view('speedView', $speedCars);
         }
     }
 
