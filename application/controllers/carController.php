@@ -10,9 +10,15 @@
     class carController extends CI_Controller {
         
         public function index(){
-            $this->load->model('carModel');
-            $data['records'] = $this->carModel->getData();
-            $this->load->view('carView', $data);
+            $this->load->model('allCarModel');
+            $allCars['data'] = $this->allCarModel->getData();
+            $this->load->view('allCarView', $allCars);
+        }
+        
+        public function over200(){
+            $this->load->model('over200Model');
+            $over200Cars['data'] = $this->over200Model->getData();
+            $this->load->view('over200View', $over200Cars);
         }
     }
 

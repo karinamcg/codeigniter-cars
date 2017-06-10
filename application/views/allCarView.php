@@ -8,6 +8,6 @@
 <?php
 
     //Echo out all the records for the cars in the database in JSON format
-    echo json_encode($records);
+    echo json_encode($data);
 
 ?>

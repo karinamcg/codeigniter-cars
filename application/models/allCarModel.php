@@ -7,10 +7,10 @@
 -->
 <?php
 
-    class carModel extends CI_Model {
+    class allCarModel extends CI_Model {
     
         public function getData(){
-            $query = $this->db->get('data');
+            $query = $this->db->get('car_data');
             return $query->result();
         }
     }
