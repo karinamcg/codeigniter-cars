@@ -14,15 +14,6 @@
             $this->load->database();
         }
         
-        /*
-        public function getData($speed){
-            $this->db->select('*');
-            $this->db->from('car_data');
-            $this->db->where('speed >', $speed);
-            $query = $this->db->get();
-            return $query->result();
-        }*/
-        
         // Function to select all the cars when a top speed is greater than the specified user speed
         public function getData($speed){
             // Select all from table where speed is greater than user's input

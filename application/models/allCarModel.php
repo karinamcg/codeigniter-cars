@@ -8,6 +8,11 @@
 <?php
 
     class allCarModel extends CI_Model {
+        
+        public function __construct(){
+            parent::__construct();
+            $this->load->database();
+        }
     
         // Function to select all data from the table
         public function getData(){
