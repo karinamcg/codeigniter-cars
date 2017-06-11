@@ -10,10 +10,14 @@ READ ME for Codeiginiter Web Service Assignment
 
 
 
+***Please import cars.sql into Database*** 
+
+
+
 ******END POINTS******
 
-Display all the car data - 
-http://localhost/mvc/assignment1/codeigniter/CarController 
+Display all the car data in the Database - 
+http://localhost/mvc/assignment1/codeigniter/Car_Controller
 
 Display only cars with a max speed greater than the users input (Replace '200' with your chosen max speed) - 
-http://localhost/mvc/assignment1/codeigniter/CarController/speed/200 
+http://localhost/mvc/assignment1/codeigniter/Car_Controller/speed/200 

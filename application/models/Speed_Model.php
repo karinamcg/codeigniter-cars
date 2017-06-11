@@ -7,8 +7,9 @@
 -->
 <?php
 
-    class speedModel extends CI_Model {
+    class Speed_Model extends CI_Model {
         
+        // Call constructor
         public function __construct(){
             parent::__construct();
             $this->load->database();
