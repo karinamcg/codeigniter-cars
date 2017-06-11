@@ -9,8 +9,10 @@
 
     class allCarModel extends CI_Model {
     
+        // Function to select all data from the table
         public function getData(){
             $query = $this->db->get('car_data');
+            // Return the result
             return $query->result();
         }
     }

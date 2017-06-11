@@ -7,7 +7,7 @@
 -->
 <?php
 
-    //Echo out all the records for the cars in the database in JSON format
+    //Echo out all the records for the cars that have a greater top speed than what the user has specified but in JSON format
     echo json_encode($data);
 
 ?>

@@ -13,23 +13,22 @@
             parent::__construct();
             $this->load->database();
         }
-    
-        /*public function getData(){
-            $query = $this->db->query('SELECT * FROM `car_data` WHERE `speed` > 200');
-            return $query->result();
-        }*/
         
         /*
-        public function getData($speed){
-            $query = "SELECT * FROM `car_data` WHERE `speed` > $speed ";
-            return $this->db->query($query)->row();
-        }*/
-        
         public function getData($speed){
             $this->db->select('*');
             $this->db->from('car_data');
             $this->db->where('speed >', $speed);
             $query = $this->db->get();
+            return $query->result();
+        }*/
+        
+        // Function to select all the cars when a top speed is greater than the specified user speed
+        public function getData($speed){
+            // Select all from table where speed is greater than user's input
+            $this->db->select('*')->from('car_data')->where('speed >', $speed);
+            $query = $this->db->get();
+            // Return the result
             return $query->result();
         }
     }
