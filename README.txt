@@ -16,6 +16,7 @@ READ ME for Codeiginiter Web Service Assignment
 
 ******END POINTS******
 
+
 Display all the car data in the Database - 
 http://localhost/mvc/assignment1/codeigniter/Car_Controller
 
